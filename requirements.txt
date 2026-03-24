@@ -1,0 +1,14 @@
+# requirements.txt
+# Dependencias principales
+python-dotenv>=1.0.0
+#databricks-sdk>=0.20.0
+#pandas>=2.0.0
+#numpy>=1.24.0
+# Librería principal de Azure Event Hubs (necesaria siempre)
+azure-eventhub
+
+# Para autenticación con identidad de Azure (recomendado en producción)
+azure-identity
+
+# [OPCIONAL] Necesario solo para RECIBIR eventos con checkpoint en Blob Storage
+azure-eventhub-checkpointstoreblob-aio
