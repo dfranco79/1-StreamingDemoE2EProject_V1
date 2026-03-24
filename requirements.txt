@@ -12,3 +12,5 @@ azure-identity
 
 # [OPCIONAL] Necesario solo para RECIBIR eventos con checkpoint en Blob Storage
 azure-eventhub-checkpointstoreblob-aio
+
+pyspark

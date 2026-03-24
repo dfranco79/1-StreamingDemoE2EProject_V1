@@ -56,7 +56,7 @@ CT_QUERY = """
 def main():
     log.info('Iniciando productor Change Tracking.')
     producer = EventHubProducerClient.from_connection_string(
-        conn_str=EH_CONN_STR, eventhub_name=EH_NAME
+        conn_str=EH_CONN_STR, eventhub_name=EH_NAME,keep_alive=10
     )
     with producer:
         while True:

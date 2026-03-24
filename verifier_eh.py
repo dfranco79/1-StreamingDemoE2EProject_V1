@@ -14,7 +14,7 @@ def on_event(partition_context, event):
     partition_context.update_checkpoint(event)
 
 client = EventHubConsumerClient.from_connection_string(
-    conn_str, consumer_group='cg-autoloader', eventhub_name=eh_name
+    conn_str, consumer_group='$cg-autoloader', eventhub_name=eh_name
 )
 with client:
     # Leer durante 10 segundos para verificar
