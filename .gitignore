@@ -1,0 +1,8 @@
+# Ignorar archivos de variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Ignorar archivos de configuración sensible
+secrets/
+config/credentials.json
